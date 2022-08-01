@@ -26,6 +26,7 @@ We will create a machine learning model that predicts whether a person died from
 The data was registered to the Azure Machine Learning Studio by uploading it from local files. 
 
 ## Automated ML
+These are the settings I set for the AutoML. I set the experiment to timeout after 15 minutes, and to focus on accuracy. The task is a binary classification problem, and I enabled early stopping, in the event accuracy did not improve over 20 iterations.
 
 
 ### Results
