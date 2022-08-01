@@ -42,7 +42,8 @@ I used the Logistic Regression model in my python train script. I chose C and ma
 I also used a random arameter sampling to sample over a discrete set of values, even though this would mean it was going to take longer to execute.
 The bandit policy is based on slack factor/ slack amount and evaluation interval. Bandit terminates where the primary metric is not within the specified slack factor/ slack amount compared to the best performing run.
 
-<img src>
+<img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/4b3fb82372a86a54bd68d0fab8874b30bb4abecb/images/02-Hyperdrive_params.png">
+
 
 
 ### Results
