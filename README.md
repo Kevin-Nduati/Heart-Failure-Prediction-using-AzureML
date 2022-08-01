@@ -53,12 +53,14 @@ In order to improve the model, I could have increased max_total_runs and reduced
 ## Model Deployment
 Since the Automl model performed better, that is tthe model that I deployed.
 This screenshot shows that the model was deployed successfully
+<img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/80fabf1d761e0a783c199815b8946be0085544fc/images/05-Deployed_model1.png">
+
+Here is how I consumed the model:
+<img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/80fabf1d761e0a783c199815b8946be0085544fc/images/05-Deployed_model2.png">
+
+Here are the app insights of the deployed model:
+<img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/e51ea77355105392e2fde37f3c099bb8e92246fe/images/03-Model_deployed_03.png">
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+This is the link to the youtube video detailing the workings of my model: <a href="">LINK</a>
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
