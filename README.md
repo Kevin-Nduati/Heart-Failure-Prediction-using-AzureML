@@ -29,16 +29,20 @@ The data was registered to the Azure Machine Learning Studio by uploading it fro
 These are the settings I set for the AutoML. I set the experiment to timeout after 15 minutes, and to focus on accuracy. The task is a binary classification problem, and I enabled early stopping, in the event accuracy did not improve over 20 iterations.
 <img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/4c9641370ee8178d5e047bcfada7acc414868496/images/01-Automl_settings.png">
 
+
 ### Results
-The AutoML model managed to get 85.9% accuracy. 
+The AutoML model managed to get 85.9% accuracy. The best model was a voting ensemble
 <img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/e51ea77355105392e2fde37f3c099bb8e92246fe/images/01-Automl_best_acc.png">
+The parameters of the model are:
+<img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/e6bf27248989f0361af1e26363f8f69607c1e9a0/images/01-Automl_params.png">
 
-
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+I used the Logistic Regression model in my python train script. I chose C and max_iter as the hyperparameters to tune. The parameter search space for C is [0.01, 0.1, 1.0, 10, 100] and for max_iter was [20,50,100,120,150].
+I also used a random arameter sampling to sample over a discrete set of values, even though this would mean it was going to take longer to execute.
+The bandit policy is based on slack factor/ slack amount and evaluation interval. Bandit terminates where the primary metric is not within the specified slack factor/ slack amount compared to the best performing run.
+
+<img src>
 
 
 ### Results
