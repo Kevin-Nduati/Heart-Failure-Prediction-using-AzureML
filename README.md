@@ -27,10 +27,13 @@ The data was registered to the Azure Machine Learning Studio by uploading it fro
 
 ## Automated ML
 These are the settings I set for the AutoML. I set the experiment to timeout after 15 minutes, and to focus on accuracy. The task is a binary classification problem, and I enabled early stopping, in the event accuracy did not improve over 20 iterations.
-
+<img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/4c9641370ee8178d5e047bcfada7acc414868496/images/01-Automl_settings.png">
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+The AutoML model managed to get 85.9% accuracy. 
+<img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/e51ea77355105392e2fde37f3c099bb8e92246fe/images/01-Automl_best_acc.png">
+
+
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
