@@ -62,5 +62,5 @@ Here are the app insights of the deployed model:
 <img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/e51ea77355105392e2fde37f3c099bb8e92246fe/images/03-Model_deployed_03.png">
 
 ## Screen Recording
-This is the link to the youtube video detailing the workings of my model: <a href="https://youtu.be/TtizUykbwXQ">LINK</a>
+This is the link to the youtube video detailing the workings of my model: <a href="https://youtu.be/LYBL7RL831E">LINK</a>
 
