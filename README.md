@@ -1,25 +1,32 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
-# Your Project Title Here
-
-*TODO:* Write a short introduction to your project.
-
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
+# Heart Failure Prediction using AzureML
+Cardiovascular diseases are the number 1 cause of death globally. My aim is to create a machine learning model that can predict mortality caused by heart failure.
 
 ## Dataset
-
+The dataset contains the following columns:
+* **Age-** Age of patient
+* **Anaemia-** Decrease of red blood cells or haemoglobin (boolean)
+* **creatinine_phosphate-** Level of the CPK enzyme in the blood
+* **Diabetes-** If the patient has diabetes (boolean)
+* **ejection_fraction-** Percentage of blood leaving the heart at each contraction
+* **high_blood_pressure-** If the patient has hypertension
+* **platelets-** Plateletes in the blood
+* **serum_creatinine-** Level of serum creatinine in the blood
+* **serum_sodium-** Level of serum sodium in the blood
+* **sex-** woman or man
+* **smoking-** If the patient smokes or not
+* **time-** Follow up period(days)
+* **death_event-** If the patient deceased during the follow-up period(boolean)
 ### Overview
-*TODO*: Explain about the data you are using and where you got it from.
+* The data was downloaded from kaggle and you can download it <a href="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/71c29d71430511ab531bf353f1c1287f00c022f3/heart_failure_clinical_records_dataset.csv">here</a>
 
 ### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+We will create a machine learning model that predicts whether a person died from heart failure given the other features.
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+The data was registered to the Azure Machine Learning Studio by uploading it from local files. 
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
