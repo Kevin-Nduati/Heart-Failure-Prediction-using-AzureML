@@ -47,12 +47,12 @@ The bandit policy is based on slack factor/ slack amount and evaluation interval
 
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+<img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/b5a48edb5ed50c3152c88d4154c1af3b971888db/images/02-Hyperdrive_acc.png">
+In order to improve the model, I could have increased max_total_runs and reduced the experiment_timeout_minutes so as to allow it to optimize parameters more. I could also have used Bayesian sampling as it picks the next sample of hyperparameters based on how the previous samples performed.
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+Since the Automl model performed better, that is tthe model that I deployed.
+This screenshot shows that the model was deployed successfully
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
