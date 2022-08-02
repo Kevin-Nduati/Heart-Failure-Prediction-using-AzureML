@@ -31,11 +31,14 @@ These are the settings I set for the AutoML. I set the experiment to timeout aft
 
 
 ### Results
-The AutoML model managed to get 85.9% accuracy. The best model was a voting ensemble
+The best model was a voting ensemble with an accuracy of 85.9%. The voting ensemle had inner estimators such as LogisticRegression, KNeighborsClassifier, RandomForestClassifier and LightGBMclassifier. The model used soft voting and there was unequal weights in voting.<br>
+The next model was a StandardScalerWrapper XGBoostClassifier with an accuracy of 84.94%. 
+The model can be improved further by applying feature engineering and feature selection.
 <img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/e51ea77355105392e2fde37f3c099bb8e92246fe/images/01-Automl_best_acc.png">
 The parameters of the model are:
 <img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/e6bf27248989f0361af1e26363f8f69607c1e9a0/images/01-Automl_params.png">
 
+<strong>NOTE:</strong> My RunDetails Widgets fail to load in my notebooks. I have tried to solve this,to no avail. It seems there are others with the same issue, and it is a problem that I cannot solve.
 
 ## Hyperparameter Tuning
 I used the Logistic Regression model in my python train script. I chose C and max_iter as the hyperparameters to tune. The parameter search space for C is [0.01, 0.1, 1.0, 10, 100] and for max_iter was [20,50,100,120,150].
@@ -49,6 +52,8 @@ The bandit policy is based on slack factor/ slack amount and evaluation interval
 ### Results
 <img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/b5a48edb5ed50c3152c88d4154c1af3b971888db/images/02-Hyperdrive_acc.png">
 In order to improve the model, I could have increased max_total_runs and reduced the experiment_timeout_minutes so as to allow it to optimize parameters more. I could also have used Bayesian sampling as it picks the next sample of hyperparameters based on how the previous samples performed.
+The final maximum iterations was 50 and the C was 1.0. This means the model needed fewer iterations to converge.
+The accuracy after hyper parameter tuning increased from 78.8% to 81.3%. This shows that the hyperparameter tuning was critical. The model can be improved by tuning more hyperparameters such as solver.
 
 ## Model Deployment
 Since the Automl model performed better, that is tthe model that I deployed.
