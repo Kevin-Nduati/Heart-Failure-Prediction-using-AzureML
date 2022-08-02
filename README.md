@@ -55,6 +55,7 @@ Since the Automl model performed better, that is tthe model that I deployed.
 This screenshot shows that the model was deployed successfully
 <img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/80fabf1d761e0a783c199815b8946be0085544fc/images/05-Deployed_model1.png">
 
+## Inference request
 Here is how I consumed the model:
 <img src="https://github.com/Kevin-Nduati/Heart-Failure-Prediction-using-AzureML/blob/80fabf1d761e0a783c199815b8946be0085544fc/images/05-Deployed_model2.png">
 
